@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>热狗-首页</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <script>
+        document.documentElement.style.fontSize = innerWidth/15+'px';
+    </script>
+
+<!--    <script src="js/new_file.js"></script>-->
+    <script src="jquery-3.2.1.min.js" ></script>
+
+<!--action=test-->
+</head>
+<body>
+
+
+</body>
+</html>
+
+<script>
+ 
+		/*$.ajax({
+		url:"http://v.juhe.cn/toutiao/index",
+		dataType:'jsonp',
+		processData: false,
+		type:'GET',
+		data:"type=&key=13363111420d5e06247a52fa2dd008c9",
+		success:function(data){
+			
+			console.log(json.String(data))
+			
+
+		}*/
+
+//$(function(){ 
+//$.getJSON("http://query.yahooapis.com/v1/public/yql", { 
+//q: "select * from json where url=\"http://m.weather.com.cn/data/101010100.html\"", 
+//format: "json" 
+//}, function(data) { 
+//var $content = $("#content") 
+//if (data.query.results) { 
+//$content.text(JSON.stringify(data.query.results)); 
+//} else { 
+////$content.text('no such code: ' + code); 
+//} 
+//}); }); 
+
+
+//	$.ajax({
+//		url:"http://v.juhe.cn/weather/index",
+//		dataType:'jsonp',
+//		processData: false,
+//		type:'GET',
+//		data:"cityname=北京&dtype=&format=&key=74d28d65d43c78d0116d9870c0208cc7",
+//		success:function(data){
+//			
+//			console.log(data)
+//			
+//
+//		},
+//
+//	});
+
+
+
+// $(function(){ 
+//$.getJSON("http://query.yahooapis.com/v1/public/yql", { 
+//q: "select * from json where url=\"http://m.weather.com.cn/data/101010100.html\"", 
+//format: "json" 
+//}, function(data) { 
+//var $content = $("#content") 
+//if (data.query.results) { 
+//$content.text(JSON.stringify(data.query.results)); 
+//} else { 
+////$content.text('no such code: ' + code); 
+//} 
+//}); });
+
+//function readFile(fliename){
+//				return new Promise(function(resolve,reject){
+//					$.get(fliename,function(data){
+//						resolve(data)
+//					})
+//				})
+//			}
+//readFile("jwd.html").then(function(data){
+//	             console.log(data)
+//			})
+
+$.ajax({
+		url:"http://apis.juhe.cn/geo/",
+		dataType:'jsonp',
+		processData: false,
+		type:'GET',
+		data:"lng=110.124143+&lat=19.94724&type=2&dtype=&key=79a40402cc9a01ed1985bae6e8d47358",
+		success:function(data){console.log(data)	}
+})
+
+	
+//	function CrossdomainGet(url, mysuccess, mydata, Qtype) {
+ 
+//  $.ajax({
+//      type: Qtype ? Qtype : "GET",
+//      url: "http://v.juhe.cn/weixin/query",
+//      data: "pno=&ps=&dtype=&key=3c16c46c67b2d2437335158b4c127629",
+//
+//      jsonp: 'GET',
+//      success: function (data) {
+//      	console.log(data)
+//          if (data.errorCode == "0") {
+//              mysuccess(data);
+//          }
+//          else {
+//              //显示错误信息
+//              var errorMessage = data.errors;
+//              myAlert(errorMessage);
+//          }
+//      }
+//      ,
+//      error: function (XMLHttpRequest, textStatus, errorThrown) {
+//          myAlert("请求数据异常，状态码：" + XMLHttpRequest.status);
+//      }
+//  })
+//}
+
+
+//	$.ajax({
+//		url:"http://v.juhe.cn/movie/index",
+//		dataType:'jsonp',
+//		processData: false,
+//		type:'GET',
+//		data:"title=海贼王&smode=&pagesize=&offset=&dtype=&key=fe0a6f6b253c9c5d4cd691ccaa1fffec",
+//		success:function(data){
+//			
+//			console.log(data)
+//			
+//
+//		},
+//
+//	});
+
+</script>
